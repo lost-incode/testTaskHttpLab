@@ -1,27 +1,28 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <SimpleBlock/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import SimpleBlock from './components/SimpleBlock'
+
+require('typeface-nunito')
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SimpleBlock
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Nunito', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  height: 100%;
   color: #2c3e50;
   margin-top: 60px;
 }
